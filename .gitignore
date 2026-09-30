@@ -25,4 +25,6 @@ dbt_internal_packages/
 profiles.yml
 .user.yml
 *.p8
-*.pub.user.yml
+*.pub
+
+.user.yml
