@@ -23,7 +23,6 @@ Snowflake (SNOWFLAKE_SAMPLE_DATA.TPCH_SF1)
 - **Staging:** column cleaning and renaming (`stg_tpch_orders`, `stg_tpch_line_items`), materialized as views.
 - **Marts:** business models (`int_order_items`, `int_order_items_summary`, `fct_orders`), materialized as tables, with surrogate keys generated via `dbt_utils`.
 - **Orchestration:** Airflow + [Astronomer Cosmos](https://astronomer.github.io/astronomer-cosmos/) runs the dbt project as a DAG, with a `run` + `test` task group per model.
-- **Authentication:** service user (`dbt_svc`) with RSA key-pair auth, no password.
 
 ## How dbt transforms the data
 
